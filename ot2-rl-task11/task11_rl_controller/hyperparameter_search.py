@@ -54,10 +54,12 @@ def train_with_config(config_name, config, total_timesteps=500_000):
     
     # Initialize ClearML
     task = Task.init(
-        project_name="OT2 RL Controller - Hyperparameter Search/Kinga",  # Add your name
+        project_name="OT2 RL Controller - Hyperparameter Search/Kinga",
         task_name=config_name,
         tags=["hyperparameter-search", config.get('algorithm', 'PPO')],
     )
+
+    task.add_requirements("requirements.txt")
 
     task.set_base_docker('deanis/2023y2b-rl:latest')
     task.execute_remotely(queue_name="default")
