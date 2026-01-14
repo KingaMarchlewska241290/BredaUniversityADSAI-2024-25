@@ -1,0 +1,9 @@
+numpy==1.26.4
+pandas==2.2.2
+stable-baselines3==2.3.2
+gymnasium==0.29.1
+shimmy>=0.2.1
+cloudpickle
+matplotlib
+pybullet
+clearml
