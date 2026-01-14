@@ -222,7 +222,7 @@ def main() -> None:
     # ClearML (local logging or remote queue)
     # -------------------------
     task = init_clearml(
-        project="OT2 RL Controller / Kinga",
+        project="OT2 RL Controller/Kinga",
         task_name="PPO_planar_curriculum_20mm_to_10mm",
         tags=["ppo", "planar", "cpu", "curriculum"],
     )
